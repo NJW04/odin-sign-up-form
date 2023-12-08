@@ -1,0 +1,111 @@
+:root{
+    --grey-background: #E5E7Eb;
+    --green-shade: #596D48;
+}
+
+@font-face {
+    font-family: "Norse-Bold";
+    src: url(./fonts/Norse-Bold.otf);
+  }
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+}
+
+body{
+    display: flex;
+    height: 100vh;
+}
+
+.left-container{
+    background-image: url("images/shibuya-aerial.jpg");
+    background-size: 700px auto;
+    background-position: center;
+}
+
+
+.right-container{
+    display: flex;
+    flex-direction: column;
+    border: 3px red solid;
+}
+
+.right-container > .first{
+    background-color: var(--grey-background);
+    padding-top: 100px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+    padding-right: 50px;
+    font-weight: bold;
+}
+
+.first > .test1{
+    width: 700px;
+    word-wrap: break-word;
+}
+
+.first > .test2{
+    margin-bottom: 24px;
+}
+
+.test1,
+.test2,
+.test3{
+    font-size: 1.5rem;
+}
+
+.first span{
+    font-style: italic;
+    font-size: 1.5rem;
+}
+.right-container > .second{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 50px;
+}
+
+#motivation{
+    font-size: 1.5rem;
+    margin-bottom: 16px;
+}
+
+.inputWrapper label{
+    display:block;
+}
+
+.inputWrapper input{
+    margin-bottom: 24px;
+    border-color: var(--grey-background)
+}
+
+form{
+    display: flex;
+}
+
+.form-left{
+    margin-right: 40px;
+}
+.right-container > .third{
+    background-color: var(--grey-background);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 50px;
+    flex: 1;
+}
+
+button{
+    border-radius: 8px;
+    padding: 8px 16px;
+    margin-bottom: 16px;
+    background-color: var(--green-shade);
+    color: white;
+}
+
+a{
+    color: var(--green-shade);
+}
