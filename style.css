@@ -20,20 +20,38 @@ body{
     height: 100vh;
 }
 
-.left-container{
-    background-image: url("images/shibuya-aerial.jpg");
+aside{
+    background-image: url("img/halie-west-25xggax4bSA-unsplash.jpg");
     background-size: 700px auto;
-    background-position: center;
+    position: relative;
+    width: 30vw;
 }
 
+aside > .logo-strip{
+    background: black; 
+    opacity: 0.75;
+    position: absolute;
+    top: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30vw;
 
-.right-container{
+}
+
+.logo-strip > span{
+    color: white;
+    font-family: "Norse-Bold";
+    font-size: 5rem;
+}
+
+main{
     display: flex;
     flex-direction: column;
-    border: 3px red solid;
+    width: 70vw;
 }
 
-.right-container > .first{
+main > .first{
     background-color: var(--grey-background);
     padding-top: 100px;
     padding-bottom: 30px;
@@ -61,7 +79,7 @@ body{
     font-style: italic;
     font-size: 1.5rem;
 }
-.right-container > .second{
+main > .second{
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 20px;
@@ -82,6 +100,11 @@ body{
     border-color: var(--grey-background)
 }
 
+input:focus{
+    border-color: blue;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
 form{
     display: flex;
 }
@@ -89,7 +112,9 @@ form{
 .form-left{
     margin-right: 40px;
 }
-.right-container > .third{
+
+
+main > .third{
     background-color: var(--grey-background);
     padding-top: 10px;
     padding-bottom: 10px;
