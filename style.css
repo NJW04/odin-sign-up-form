@@ -45,6 +45,19 @@ aside > .logo-strip{
     font-size: 5rem;
 }
 
+#thanks{
+    position: absolute;
+    bottom: 5%;
+    color: white;
+    text-align: center;
+    width: 30vw;
+    
+}
+
+#thanks > a{
+    color: white;
+}
+
 main{
     display: flex;
     flex-direction: column;
